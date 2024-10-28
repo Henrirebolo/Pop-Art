@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Pop&Art</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Pop&Art</h1>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#bestsellers">Best-sellers</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section À propos -->
+    <section id="about">
+        <h2>À propos de Pop&Art</h2>
+        <p>Description de l'entreprise et de son univers pop culture.</p>
+    </section>
+
+    <!-- Section Best-sellers -->
+    <section id="bestsellers">
+        <h2>Nos Best-sellers</h2>
+        <div class="product">
+            <p>Produit 1 - Détails</p>
+        </div>
+        <div class="product">
+            <p>Produit 2 - Détails</p>
+        </div>
+    </section>
+
+    <!-- Formulaire de Contact -->
+    <section id="contact">
+        <h2>Contact et Commande</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="product">Produit</label>
+            <select id="product" name="product">
+                <option value="Produit1">Produit 1</option>
+                <option value="Produit2">Produit 2</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pop&Art. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
